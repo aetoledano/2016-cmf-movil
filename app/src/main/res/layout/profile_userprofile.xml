@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cmf_white"
+    android:divider="?android:dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="beginning">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/profile_label_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="Este es un texto"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/profile_label_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="Este es un texto"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <!-- another statistics -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:divider="?android:dividerHorizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:showDividers="middle|end">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_label_problems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto" />
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/profile_problems_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_label_tasaci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_label_total_myintents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto" />
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/profile_myintents_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_label_acpercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_label_total_intents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto" />
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/profile_intents_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/profile_label_attemps_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profile_label_votes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Este es un texto" />
+
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/profile_votes_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

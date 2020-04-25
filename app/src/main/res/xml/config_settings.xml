@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/cmf_white"
+    >
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="soundOn"
+        android:summary="Activa o desactiva los sonidos de CMFMovil"
+        android:title="Sonidos" />
+    <cu.uci.cmfmovil.controllers.config.MyListPreference
+        android:defaultValue="10"
+        android:dialogTitle="Indicar Cantidad"
+        android:entries="@array/problem_per_page"
+        android:entryValues="@array/problem_per_page"
+        android:key="problemsPerPage"
+        android:summary="Indica cuantos problemas serán visualizados por cada página en la lista de problemas"
+        android:title="Problemas por página" />
+    <cu.uci.cmfmovil.controllers.config.MyListPreference
+        android:defaultValue="20"
+        android:dialogTitle="Indicar Cantidad"
+        android:entries="@array/problem_to_download"
+        android:entryValues="@array/problem_to_download"
+        android:key="problemsToDownload"
+        android:summary="Indica cuantos problemas serán descargados durante la sincronización"
+        android:title="Problemas a descargar" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="acceptedProblems"
+        android:summary="Indica si deseas descargar todos los problemas o solo los que no has aceptado"
+        android:title="Descargar aceptados" />
+    <cu.uci.cmfmovil.controllers.config.MyEditTextPreference
+        android:defaultValue=""
+        android:key="username"
+        android:summary="Usuario de la cuenta CMF"
+        android:title="Usuario" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="password"
+        android:password="true"
+        android:singleLine="true"
+        android:summary="Contraseña de la cuenta CMF"
+        android:title="Contraseña" />
+</PreferenceScreen>

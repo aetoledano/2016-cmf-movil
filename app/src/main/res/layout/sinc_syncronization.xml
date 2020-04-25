@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/cmf_white"
+    >
+
+    <Button
+        android:id="@+id/sync_btnSync"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/cmf_blue2"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/ic_upload"
+        android:text="Sincronizar tus estadísticas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/cmf_white"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/sync_btndownload"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/cmf_blue2"
+        android:gravity="center"
+        android:drawableLeft="@mipmap/ic_download"
+        android:text="Descargar Problemas"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/cmf_white"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cmf_white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/banner_padd"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/cmf_logo3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+          >
+
+            <Button
+                android:id="@+id/btn_problem_lst"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:background="@color/cmf_blue2"
+                android:drawableLeft="@mipmap/ic_brain3"
+                android:drawableRight="@mipmap/transparency"
+                android:gravity="center"
+                android:text="Reta tu mente"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cmf_white"
+                android:textStyle="bold"
+                android:paddingLeft="4dp"/>
+
+            <Button
+                android:id="@+id/btn_profile_show"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/cmf_blue2"
+                android:drawableLeft="@mipmap/ic_profile"
+                android:drawableRight="@mipmap/transparency"
+                android:gravity="center"
+                android:text="Mi desempeño"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cmf_white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_sinc_show"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:background="@color/cmf_blue2"
+                android:drawableLeft="@mipmap/ic_sync"
+                android:drawableRight="@mipmap/transparency"
+                android:gravity="center"
+                android:text="Sincroniza tus datos"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cmf_white"
+                android:textStyle="bold"
+                android:minHeight="70dp"
+                android:layout_marginBottom="6dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_config_show"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="32dp"
+                android:background="@color/cmf_white"
+                android:src="@mipmap/ic_settings3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_about_us"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="32dp"
+                android:background="@color/cmf_white"
+                android:padding="4dp"
+                android:src="@mipmap/ic_info"/>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

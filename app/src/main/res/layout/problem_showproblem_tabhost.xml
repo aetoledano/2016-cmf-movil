@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cmf_blue2"
+    android:orientation="vertical">
+
+    <TabHost
+        android:id="@+id/problem_showproblemtabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/problem_showproblem_tab_showproblem" />
+
+                <include layout="@layout/problem_showproblem_tab_sending" />
+
+                <include layout="@layout/problem_showproblem_tab_statistics" />
+
+                <include layout="@layout/problem_showproblem_tab_comments" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

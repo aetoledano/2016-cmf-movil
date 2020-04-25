@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/problem_showproblem_tab_comments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:dividerHorizontal"
+    android:showDividers="beginning"
+    android:orientation="vertical"
+    android:background="@color/cmf_white"
+    >
+
+
+    <ListView
+        android:id="@+id/problem_showproblem_comments_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:fadeScrollbars="false"
+        android:background="@color/cmf_white"/>
+
+    <LinearLayout
+        android:id="@+id/problem_showproblem_comment_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle"
+        android:visibility="gone"
+        android:background="@color/cmf_white"
+        >
+
+        <EditText
+            android:id="@+id/problem_showproblem_comment_topic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:hint="Asunto"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:background="@color/cmf_white"
+            />
+
+        <EditText
+            android:id="@+id/problem_showproblem_comment_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:hint="Comentario"
+            android:padding="8dp"
+            android:background="@color/cmf_white"
+             />
+
+        <Button
+            android:id="@+id/problem_showproblem_comment_btn_addComment"
+
+            android:text="Comentar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cmf_blue2"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_action_comment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/cmf_white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/problem_showproblem_comment_layout_btn_show_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="beginning"
+        android:background="@color/cmf_white"
+        >
+
+        <Button
+            android:id="@+id/problem_showproblem_comment_btn_show_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/cmf_blue2"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_action_comment"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/cmf_white"
+            android:textStyle="bold"
+            android:text="Añadir comentario"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="problem_per_page">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>25</item>
+    </string-array>
+
+    <string-array name="problem_to_download">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+
+
+    <string name="filter_prompt">Seleccionar filtro</string>
+    <string name="app_name">CMFMovil</string>
+    <string name="problem_lst">Lista de problemas</string>
+    <string name="problem_show">Nombre de problema</string>
+    <string name="profile">Mi perfil</string>
+    <string name="sinc">Sincronizar</string>
+    <string name="config">Configuración</string>
+    <string name="about">Acerca de CMFMovil</string>
+    <string name="psss"></string>
+    <string name="title_activity_config_settings">Settings</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

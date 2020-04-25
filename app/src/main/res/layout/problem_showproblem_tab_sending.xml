@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/problem_tab_sending"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="beginning|middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cmf_white"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/cmf_white"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Intentos realizados en este dispositivo" />
+
+        <ListView
+            android:id="@+id/problem_sendinglst"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/cmf_white"
+            android:fadeScrollbars="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

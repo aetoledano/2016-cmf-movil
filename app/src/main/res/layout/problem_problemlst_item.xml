@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/problemlst_item_size"
+
+    >
+
+    <!--- android:background="@drawable/item_selector" -->
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/problemlstitem_state"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+
+    <TextView
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/problemlstitem_title"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/problemlst_item_size"
+        />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/problemlst_item_size"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="5.0"
+        android:id="@+id/problemlstitem_complexity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:gravity="right|center"
+        />
+
+
+</LinearLayout>
